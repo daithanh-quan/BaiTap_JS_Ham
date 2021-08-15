@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >Bài tập 1</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            >Bài tập 2</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="contact-tab"
+            data-toggle="tab"
+            href="#contact"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >Bài tập 3</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="about-tab"
+            data-toggle="tab"
+            href="#homework4"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+            >Bài tập 4</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <!-- Bài tập 1 -->
+        <div
+          class="tab-pane fade show active"
+          id="home"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+        >
+          <form style="width: 400px; margin: 0 auto; padding: 20px 0">
+            <h1 class="text-center text-info py-3">
+              <i class="fas fa-school"></i> Quản Lý Tuyển Sinh
+            </h1>
+            <div class="form-group">
+              <label for="maths">Môn Toán:</label>
+              <input type="number" class="form-control" id="maths" />
+            </div>
+            <div class="form-group">
+              <label for="literature">Môn Văn:</label>
+              <input type="number" class="form-control" id="literature" />
+            </div>
+            <div class="form-group">
+              <label for="english">Môn Anh: </label>
+              <input type="number" class="form-control" id="english" />
+            </div>
+            <div class="form-group">
+              <label for="area">Khu Vực: </label>
+              <input type="text" class="form-control" id="area" />
+            </div>
+            <div class="form-group">
+              <label for="people">Đối Tượng: </label>
+              <input type="number" class="form-control" id="people" />
+            </div>
+            <div class="form-group">
+              <label for="standardPoint">Điểm chuẩn: </label>
+              <input type="number" class="form-control" id="standardPoint" />
+            </div>
+            <button type="button" class="btn btn-primary" id="btnTotal">
+              Tổng
+            </button>
+            <p id="txtTotal" class="alert alert-success my-3">
+              <i class="fas fa-arrow-right"></i>
+            </p>
+            <p id="txtResult" class="alert alert-success my-3">
+              <i class="fas fa-arrow-right"></i>
+            </p>
+          </form>
+        </div>
+        <!-- Bài tập 2 -->
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <form style="width: 400px; margin: 0 auto; padding: 20px 0">
+            <h1 class="text-center text-info py-3">
+              <i class="fas fa-car-battery"></i> Tính Tiền Điện
+            </h1>
+            <div class="form-group">
+              <label for="name">Họ và tên: </label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="numberOfElect">Số chữ điện: </label>
+              <input type="number" class="form-control" id="numberOfElect" />
+            </div>
+            <button type="button" class="btn btn-primary" id="btnMoneyElec">
+              Tính Tiền Điện
+            </button>
+            <p id="txtMoneyElect" class="alert alert-success my-3">
+              <i class="fas fa-arrow-right"></i>
+            </p>
+          </form>
+        </div>
+        <!-- Bài tập 3 -->
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          <form style="width: 400px; margin: 0 auto; padding: 20px 0">
+            <h1 class="text-center text-info py-3">
+              <p><i class="fas fa-money-check-alt"></i></p>
+              Tính thuế thu nhập cá nhân
+            </h1>
+
+            <div class="form-group">
+              <label for="namePerson">Họ và tên: </label>
+              <input type="text" class="form-control" id="namePerson" />
+            </div>
+            <div class="form-group">
+              <label for="yearIncome">Tổng thu nhập năm: </label>
+              <input type="number" class="form-control" id="yearIncome" />
+            </div>
+            <div class="form-group">
+              <label for="numberOfPeople">Số người phụ thuộc: </label>
+              <input type="number" class="form-control" id="numberOfPeople" />
+            </div>
+            <button type="button" class="btn btn-primary" id="btnIncome">
+              Tính Tiền Thuế
+            </button>
+            <p id="txtIncome" class="alert alert-success my-3">
+              <i class="fas fa-arrow-right"></i>
+            </p>
+          </form>
+        </div>
+        <!-- Bài tập 4 -->
+        <div
+          class="tab-pane fade"
+          id="homework4"
+          role="tabpanel"
+          aria-labelledby="about-tab"
+        >
+          <form style="width: 400px; margin: 0 auto; padding: 20px 0">
+            <h1 class="text-center text-info py-3">
+              <i class="fas fa-wifi"></i> Tính Tiền Cáp
+            </h1>
+            <select
+              id="customer"
+              class="form-group"
+              style="width: 100%; border-radius: 5px; border: 1px solid wheat"
+              onchange="handleChange()"
+            >
+              <option value="">Chọn loại khách hàng</option>
+              <option value="business">Doanh nghiệp</option>
+              <option value="house">Nhà dân</option>
+            </select>
+            <div class="form-group">
+              <label for="customCode">Mã khách hàng: </label>
+              <input type="text" class="form-control" id="customCode" />
+            </div>
+            <div class="form-group" id="active" style="display: none">
+              <label for="numberOfConnecting">Số kết nối: </label>
+              <input
+                type="number"
+                class="form-control"
+                id="numberOfConnecting"
+              />
+            </div>
+            <div class="form-group">
+              <label for="highChanel">Số kênh cao cấp: </label>
+              <input type="number" class="form-control" id="highChanel" />
+            </div>
+            <button type="button" class="btn btn-primary" id="btnMoneyWiFi">
+              Tính Tiền Cáp
+            </button>
+            <p id="txtMoneyWiFi" class="alert alert-success my-3">
+              <i class="fas fa-arrow-right"></i>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/baiTap1.js"></script>
+    <script src="./js/baiTap2.js"></script>
+    <script src="./js/baiTap3.js"></script>
+    <script src="./js/baiTap4.js"></script>
+  </body>
+</html>
